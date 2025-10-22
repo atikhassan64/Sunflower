@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router";
 import HomeLayout from "../layouts/HomeLayout";
 import HomePage from "../pages/HomePage";
 import SkillDetailsPage from "../pages/SkillDetailsPage";
+import Login from "../components/Authentication/Login";
+import Register from "../components/Authentication/Register";
+import Profile from "../pages/Profile";
 
 export const router = createBrowserRouter([
     {
@@ -16,6 +19,18 @@ export const router = createBrowserRouter([
                 path: "/skill_details/:id",
                 element: <SkillDetailsPage />,
                 loader: () => fetch("/sunflower_data.json")
+            },
+            {
+                path: "/login",
+                element: <Login />
+            },
+            {
+                path: "/register",
+                element: <Register />
+            },
+            {
+                path: "/profile",
+                element: <Profile />
             }
         ]
     }

@@ -6,7 +6,7 @@ import logo from '../assets/Sunflower-01.png'
 const NavBar = () => {
     const links = <>
         <li><NavLink className={`font-medium text-lg text-accent`} to={`/`}>Home</NavLink></li>
-        <li><NavLink className={`font-medium text-lg text-accent`} to={`/my_profile`}>My Profile</NavLink></li>
+        <li><NavLink className={`font-medium text-lg text-accent`} to={`/profile`}>My Profile</NavLink></li>
     </>
     return (
         <div className="max-w-11/12 mx-auto">
@@ -30,8 +30,8 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-4">
-                    <a className="btn border-none bg-base-100 text-secondary py-2 hover:btn-primary hover:bg-primary hover:text-white"><TbLogin2 /> Log in</a>
-                    <a className="btn btn-secondary ">Sign up</a>
+                    <Link to={`/login`} className="btn border-none bg-base-100 text-secondary py-2 hover:btn-primary hover:bg-primary hover:text-white"><TbLogin2 /> Log in</Link>
+                    <Link to={`/register`} className="btn btn-secondary ">Sign up</Link>
                 </div>
             </div>
         </div>
