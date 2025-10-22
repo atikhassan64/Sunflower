@@ -1,0 +1,122 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "This beginner guitar course is designed for those who have never touched a guitar before. You will start by learning the basic parts of the guitar, how to properly tune and hold it, and how to produce clean sounds using simple finger exercises. As the sessions progress, you’ll be introduced to fundamental chords such as G, C, D, and E minor, and how to switch between them smoothly. We will cover rhythm and strumming patterns to help you play along with popular songs. The lessons also focus on hand positioning, basic music theory, and ear training to help you recognize tones and chord progressions. By the end of the course, you will be able to confidently play simple songs and understand the basics of reading chord charts and tabs. This program encourages consistent practice, helps build confidence, and sets a strong foundation for more advanced guitar techniques. Join this journey to explore the joy of music through the strings of your first instrument.",
+    "image": "https://media.istockphoto.com/id/1125877063/photo/mixed-race-woman-singing-and-playing-guitar.jpg?s=612x612&w=0&k=20&c=23unW_Ugni5lUvAY2nccGkxtWQ5FtkiWgRyyN6wZMFs=",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "This spoken English course is specially designed for non-native speakers who want to improve their confidence in daily conversation. Throughout the sessions, you will engage in structured dialogues, real-life discussions, and fun speaking exercises that help you think and respond naturally in English. The focus is on pronunciation, vocabulary building, and improving your fluency. You will also learn how to express opinions, make polite requests, and participate in discussions confidently. Grammar lessons are simplified and taught in context to make speaking smoother and more natural. Each class includes a listening activity and interactive group conversation so you can apply what you learn immediately. Personalized feedback is provided after every session to help you track your progress and fix pronunciation or grammatical mistakes. By the end of the course, you will be able to speak more clearly, confidently, and effectively in both casual and professional situations.",
+    "image": "https://learninginroom213.com/wp-content/uploads/2017/06/AdobeStock_520599204-scaled.jpeg",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Basic Web Development",
+    "providerName": "John Carter",
+    "providerEmail": "john@skillswap.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "In this web development course, you will learn how to build your first website from scratch using HTML, CSS, and JavaScript. The course starts by introducing the structure of web pages using HTML, where you will learn how to create headings, paragraphs, images, and links. Then we move to styling with CSS to design beautiful layouts, colors, and responsive designs that work on all devices. You will also explore the basics of JavaScript to make your website interactive — such as handling button clicks, form validations, and animations. This course emphasizes hands-on practice, and you’ll create several small projects, including a portfolio website and a personal blog. Along the way, you’ll learn about file organization, browser developer tools, and debugging. By the end of the course, you’ll understand how websites work, how to deploy them online, and how to take the first steps toward becoming a front-end developer. No previous experience is required.",
+    "image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?semt=ais_hybrid&w=740&q=80",
+    "category": "Technology"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Photography for Beginners",
+    "providerName": "Emily Watson",
+    "providerEmail": "emily@skillswap.com",
+    "price": 18,
+    "rating": 4.7,
+    "slotsAvailable": 2,
+    "description": "This beginner photography class introduces you to the exciting world of visual storytelling through a camera lens. You’ll learn about camera types, lenses, exposure settings, and lighting techniques. The course covers essential topics like ISO, aperture, and shutter speed, and explains how they affect image quality. You’ll also explore composition rules such as the rule of thirds, framing, and depth to make your photos visually appealing. We’ll practice indoor and outdoor photography, portrait and landscape shots, and basic photo editing using free tools. You’ll also receive tips on capturing natural light, using reflections creatively, and improving your sense of timing for candid photography. The lessons are beginner-friendly and focus on developing your confidence in handling a camera. By the end, you’ll understand how to control your camera manually, frame artistic photos, and edit them to perfection. Perfect for hobbyists or anyone wanting to capture life more beautifully.",
+    "image": "https://iso.500px.com/wp-content/uploads/2016/10/stock-photo-159358357.jpg",
+    "category": "Art"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Cooking Healthy Meals",
+    "providerName": "Rina Das",
+    "providerEmail": "rina@skillswap.com",
+    "price": 15,
+    "rating": 4.5,
+    "slotsAvailable": 6,
+    "description": "This healthy cooking course focuses on simple and nutritious recipes for everyday meals. You’ll learn how to prepare delicious dishes using fresh, seasonal ingredients while maintaining balance and taste. The sessions cover meal planning, ingredient selection, and healthy cooking techniques like steaming, baking, and stir-frying. You’ll also explore how to make vegetarian, vegan, and gluten-free meals that don’t compromise on flavor. Each class includes hands-on cooking and nutritional tips to help you understand the importance of vitamins, proteins, and fiber. You’ll learn how to substitute unhealthy ingredients with healthier options and create your own balanced meal plans. This course is ideal for beginners who want to cook smarter and live healthier. By the end, you’ll be able to cook quick, wholesome meals at home, reduce dependency on processed foods, and confidently experiment with flavors that suit your diet and lifestyle.",
+    "image": "https://www.ideafit.com/wp-content/uploads/2022/03/Home-Cooked-Meals-903x602.jpg",
+    "category": "Cooking"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Yoga and Meditation Basics",
+    "providerName": "Anil Kumar",
+    "providerEmail": "anil@skillswap.com",
+    "price": 12,
+    "rating": 4.8,
+    "slotsAvailable": 5,
+    "description": "This beginner yoga and meditation course introduces you to physical postures, breathing exercises, and mindfulness practices to calm your body and mind. Each class focuses on gentle stretches, proper alignment, and balance, making it suitable for all ages. You’ll learn the fundamentals of yoga poses like Downward Dog, Warrior, and Child’s Pose, combined with guided breathing (Pranayama) to improve focus and reduce stress. The meditation sessions teach techniques to quiet the mind and stay present. You’ll also explore how yoga supports better sleep, flexibility, and emotional well-being. By maintaining consistency, you’ll notice improved posture, energy levels, and inner peace. No prior yoga experience is needed — just a willingness to connect with yourself and grow. By the end of the program, you’ll have a personalized daily routine that helps you stay grounded, relaxed, and healthy both physically and mentally.",
+    "image": "https://premierfitnessstudio.com/wp-content/uploads/2024/11/PFS-yoga-meditation.jpg",
+    "category": "Health"
+  },
+  {
+    "skillId": 7,
+    "skillName": "Graphic Design Fundamentals",
+    "providerName": "Nadia Rahman",
+    "providerEmail": "nadia@skillswap.com",
+    "price": 22,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "This course covers the essential principles of graphic design, focusing on color theory, typography, and visual hierarchy. You’ll learn to create professional and appealing layouts using design tools like Canva, Figma, and Adobe Express. The lessons explain how to balance composition, choose harmonious color palettes, and select the right fonts for different projects. You’ll also explore how branding works, from logo design to social media graphics. Each session includes hands-on exercises that develop your creativity and technical skills. You’ll receive personalized feedback to improve your design sense and learn how to apply these skills in real projects. By the end of the course, you’ll be able to design eye-catching posters, business cards, and digital media content. Whether you’re planning a career in design or simply want to enhance your creative side, this course gives you the solid foundation you need to express ideas visually with confidence.",
+    "image": "https://plus.unsplash.com/premium_photo-1723914173267-55fc6fe75146?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8",
+    "category": "Design"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Digital Marketing Essentials",
+    "providerName": "Omar Faruk",
+    "providerEmail": "omar@skillswap.com",
+    "price": 30,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "This course provides a complete introduction to digital marketing, helping you understand how to grow an online presence effectively. You’ll explore the core concepts of SEO, content marketing, email campaigns, and social media strategy. The lessons teach how to identify target audiences, build marketing funnels, and track results using analytics tools. You’ll also learn how to run paid ads on platforms like Facebook and Google. Real-world case studies are used to explain successful strategies and common mistakes. Each participant will create a sample marketing campaign and receive feedback to improve results. By the end of this course, you’ll know how to plan, execute, and analyze marketing strategies that generate measurable success. Perfect for small business owners, freelancers, and students looking to enter the marketing industry with practical, hands-on experience and confidence.",
+    "image": "https://arihantglobal.net/wp-content/uploads/2025/03/BOOSTING-BUSINESS-REACH-ONLINE-DIGITAL-MARKETING-ESSENTIALS-768x404.jpg",
+    "category": "Marketing"
+  },
+  {
+    "skillId": 9,
+    "skillName": "Basic Drawing Techniques",
+    "providerName": "Lisa Gomez",
+    "providerEmail": "lisa@skillswap.com",
+    "price": 14,
+    "rating": 4.6,
+    "slotsAvailable": 7,
+    "description": "This beginner drawing course teaches you how to express creativity through lines and shapes. You’ll start with simple sketching exercises to improve your hand control and observation skills. The sessions introduce perspective drawing, light and shadow, and basic anatomy to help you draw realistic figures and objects. You’ll learn how to use pencils, charcoal, and ink effectively. Each class includes a short project that allows you to apply new techniques, such as drawing still life or portraits. The course encourages creative freedom while developing your understanding of proportion and composition. Feedback will be provided to help refine your art style and confidence. By the end, you’ll have a solid foundation in sketching and the skills to create artwork that reflects your unique imagination. This class is ideal for aspiring artists who wish to turn their passion for drawing into a meaningful creative hobby or professional skill.",
+    "image": "https://plus.unsplash.com/premium_photo-1673514503558-e7ed72105d4d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZHJhd2luZ3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "category": "Art"
+  },
+  {
+    "skillId": 10,
+    "skillName": "Mobile App Development with React Native",
+    "providerName": "David Lee",
+    "providerEmail": "david@skillswap.com",
+    "price": 35,
+    "rating": 5.0,
+    "slotsAvailable": 2,
+    "description": "This course introduces you to mobile app development using React Native, one of the most popular frameworks for building cross-platform applications. You’ll start with the basics of React components, props, and state management. Then, you’ll learn how to use React Native’s UI components to design visually appealing and functional mobile screens. The course covers navigation, API integration, and data storage using AsyncStorage. You’ll also explore debugging tools, optimization techniques, and deployment on Android and iOS devices. By completing several mini projects, you’ll gain confidence in writing reusable code and handling real-world app logic. This hands-on training ensures that you not only understand the technical aspects but also the best practices for user experience and performance. By the end, you’ll have built your own mobile app and be ready to take on freelance or professional development projects.",
+    "image": "https://s3-ap-south-1.amazonaws.com/trt-blog-ghost/2022/12/React-native-app-development.jpg",
+    "category": "Technology"
+  }
+]
