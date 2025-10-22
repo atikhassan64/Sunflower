@@ -10,10 +10,16 @@ const Login = () => {
                     <fieldset className="fieldset">
                         {/* Email */}
                         <label className="label">Email</label>
-                        <input type="email" className="input outline-0 " placeholder="Email" />
+                        <input 
+                        type="email" 
+                        className="input outline-0 " 
+                        placeholder="Email" />
                         {/* Password */}
                         <label className="label">Password</label>
-                        <input type="password" className="input outline-0 " placeholder="Password" />
+                        <input 
+                        type="password" 
+                        className="input outline-0 " 
+                        placeholder="Password" />
                         {/* Forget btn */}
                         <div><a className="link link-hover">Forgot password?</a></div>
                         {/* Login btn */}
