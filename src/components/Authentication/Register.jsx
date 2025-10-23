@@ -79,9 +79,9 @@ const Register = () => {
     }
 
     return (
-        <div className='flex justify-center items-center mt-10 min-h-screen'>
-            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                <h2 className='pt-6 text-center font-semibold text-2xl text-primary '>Login your account</h2>
+        <div className='flex justify-center items-center mt-10 md:min-h-screen max-w-11/12 mx-auto'>
+            <div className="card bg-base-100 w-full md:max-w-sm shrink-0 shadow-2xl">
+                <h2 className='pt-6 text-center font-semibold text-2xl text-primary '>Signup your Account</h2>
                 <form onSubmit={handleRegister} className="card-body">
                     <fieldset className="fieldset">
                         {/* Name */}
@@ -117,12 +117,12 @@ const Register = () => {
                                 placeholder="Password"
                                 required
                             />
-                            <div onClick={() => setToggle(!toggle)} className='absolute text-primary ml-70'>
+                            <div onClick={() => setToggle(!toggle)} className='absolute text-primary ml-68 md:ml-70'>
                                 {
                                     toggle ?
-                                        <FaEyeSlash className='' size={24}></FaEyeSlash>
+                                        <FaEyeSlash className='' size={20}></FaEyeSlash>
                                         :
-                                        <FaEye className=' ' size={24}></FaEye>
+                                        <FaEye className=' ' size={20}></FaEye>
 
                                 }
                             </div>

@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 
 const SkillCard = ({ card }) => {
     const { image, skillName, rating, price, skillId } = card;
-    // console.log(image, skillName, rating, price)
     return (
         <div>
             <div className="card bg-base-100 shadow-sm">
