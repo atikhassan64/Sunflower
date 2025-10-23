@@ -51,10 +51,10 @@ const NavBar = () => {
                             <div className="navbar-end flex gap-2">
                                 <div onMouseEnter={() => setShow(true)}
                                     onMouseLeave={() => setShow(false)}
-                                    className=' flex items-center '>
-                                    <div>
+                                    className=' flex relative items-center '>
+                                    <div className='absolute z-40 '>
                                         {
-                                            show && <h2 className='text-sm text-primary text-center'>{user.displayName}</h2>
+                                            show && <h2 className='text-sm dropdown-content bg-base-100 rounded-box z-1 mt-25 w-50 p-2 shadow text-primary '>{user.displayName}</h2>
                                         }
                                     </div>
                                     <img src={user.photoURL} alt={user.displayName} className={`h-10 ml-1 w-10 rounded-full cursor-pointer`} />
