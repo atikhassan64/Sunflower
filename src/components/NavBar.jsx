@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { use } from 'react';
 import { TbLogin2 } from 'react-icons/tb';
 import { Link, NavLink } from 'react-router';
 import logo from '../assets/Sunflower-01.png'
+import { AuthContext } from '../contexts/AuthContext';
+import { toast } from 'react-toastify';
 
 const NavBar = () => {
+
+    const { user, logOutUser } = use(AuthContext);
+    // console.log(user)
+
+    const handleLogOut = ()=>{
+        logOutUser()
+        .then(()=>{
+            toast.success('SignOut success')
+        })
+        .catch((error)=>{
+            toast.error(error.message)
+        })
+    }
     const links = <>
         <li><NavLink className={`font-medium text-lg text-accent`} to={`/`}>Home</NavLink></li>
         <li><NavLink className={`font-medium text-lg text-accent`} to={`/profile`}>My Profile</NavLink></li>
@@ -29,9 +44,19 @@ const NavBar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end flex gap-4">
-                    <Link to={`/login`} className="btn border-none bg-base-100 text-secondary py-2 hover:btn-primary hover:bg-primary hover:text-white"><TbLogin2 /> Log in</Link>
-                    <Link to={`/register`} className="btn btn-secondary ">Sign up</Link>
+                <div className="navbar-end">
+                    {
+                        user ?
+                            <div className="navbar-end flex gap-4">
+                                <Link onClick={handleLogOut} to={`/`} className="btn border-none bg-base-100 text-secondary py-2 hover:btn-primary hover:bg-primary hover:text-white"><TbLogin2 /> Log Out</Link>
+                                
+                            </div>
+                            :
+                            <div className="navbar-end flex gap-4">
+                                <Link to={`/login`} className="btn border-none bg-base-100 text-secondary py-2 hover:btn-primary hover:bg-primary hover:text-white"><TbLogin2 /> Log in</Link>
+                                <Link to={`/register`} className="btn btn-secondary ">Sign up</Link>
+                            </div>
+                    }
                 </div>
             </div>
         </div>

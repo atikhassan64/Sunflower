@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Link } from 'react-router';
+import { AuthContext } from '../../contexts/AuthContext';
+import { toast } from 'react-toastify';
 
 const Register = () => {
+    const { createUser, setUser } = use(AuthContext);
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -10,7 +13,16 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({name, photo, email, password})
+        console.log({ name, photo, email, password })
+        createUser(email, password)
+        .then((result) =>{
+            // console.log(result.user)
+            const user = result.user
+            setUser(user)
+        })
+        .catch((error)=>{
+            toast.error(error.message);
+        })
     }
 
     return (
@@ -21,32 +33,32 @@ const Register = () => {
                     <fieldset className="fieldset">
                         {/* Name */}
                         <label className="label">Name</label>
-                        <input 
-                        type="text" 
-                        name='name' 
-                        className="input outline-0 " 
-                        placeholder="Name" />
+                        <input
+                            type="text"
+                            name='name'
+                            className="input outline-0 "
+                            placeholder="Name" />
                         {/* Photo-URL */}
                         <label className="label">Photo-URL</label>
-                        <input 
-                        type="text" 
-                        name='photo' 
-                        className="input outline-0 " 
-                        placeholder="Photo-URL" />
+                        <input
+                            type="text"
+                            name='photo'
+                            className="input outline-0 "
+                            placeholder="Photo-URL" />
                         {/* Email */}
                         <label className="label">Email</label>
-                        <input 
-                        type="email" 
-                        name='email' 
-                        className="input outline-0 " 
-                        placeholder="Email" />
+                        <input
+                            type="email"
+                            name='email'
+                            className="input outline-0 "
+                            placeholder="Email" />
                         {/* Password */}
                         <label className="label">Password</label>
-                        <input 
-                        type="password" 
-                        name='password' 
-                        className="input outline-0 " 
-                        placeholder="Password" />
+                        <input
+                            type="password"
+                            name='password'
+                            className="input outline-0 "
+                            placeholder="Password" />
                         {/* Signup btn */}
                         <button type='submit' className="btn mt-4 btn-primary">Signup</button>
                     </fieldset>
