@@ -5,6 +5,7 @@ import SkillDetailsPage from "../pages/SkillDetailsPage";
 import Login from "../components/Authentication/Login";
 import Register from "../components/Authentication/Register";
 import Profile from "../pages/Profile";
+import PrivetRoute from "./PrivetRoute";
 
 export const router = createBrowserRouter([
     {
@@ -30,7 +31,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/profile",
-                element: <Profile />
+                element: <PrivetRoute><Profile></Profile></PrivetRoute>                
             }
         ]
     }
