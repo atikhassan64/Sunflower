@@ -18,7 +18,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/skill_details/:id",
-                element: <SkillDetailsPage />,
+                element: <PrivetRoute>
+                    <SkillDetailsPage />
+                </PrivetRoute>,
                 loader: () => fetch("/sunflower_data.json")
             },
             {
@@ -31,7 +33,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/profile",
-                element: <PrivetRoute><Profile></Profile></PrivetRoute>                
+                element: <PrivetRoute><Profile></Profile></PrivetRoute>
             }
         ]
     }

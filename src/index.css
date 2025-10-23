@@ -21,6 +21,6 @@
 }
 
 
-.loginBtn a.active{
-  @apply text-primary
+.navbarColor a.active{
+  @apply text-secondary  font-semibold underline
 }

@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { TbLogin2 } from 'react-icons/tb';
 import { Link, NavLink } from 'react-router';
 import logo from '../assets/Sunflower-01.png'
@@ -8,21 +8,22 @@ import { toast } from 'react-toastify';
 const NavBar = () => {
 
     const { user, logOutUser } = use(AuthContext);
+    const [show, setShow] = useState(false)
     // console.log(user)
 
-    const handleLogOut = ()=>{
+    const handleLogOut = () => {
         logOutUser()
-        .then(()=>{
-            toast.success('SignOut success')
-        })
-        .catch((error)=>{
-            toast.error(error.message)
-        })
+            .then(() => {
+                toast.success('SignOut success')
+            })
+            .catch((error) => {
+                toast.error(error.message)
+            })
     }
-    const links = <>
+    const links = <div className='navbarColor flex md:flex-row flex-col'>
         <li><NavLink className={`font-medium text-lg text-accent`} to={`/`}>Home</NavLink></li>
         <li><NavLink className={`font-medium text-lg text-accent`} to={`/profile`}>My Profile</NavLink></li>
-    </>
+    </div>
     return (
         <div className="max-w-11/12 mx-auto">
             <div className="navbar py-1 px-0">
@@ -47,9 +48,19 @@ const NavBar = () => {
                 <div className="navbar-end">
                     {
                         user ?
-                            <div className="navbar-end flex gap-4">
+                            <div className="navbar-end flex gap-2">
+                                <div onMouseEnter={() => setShow(true)}
+                                    onMouseLeave={() => setShow(false)}
+                                    className=' flex items-center '>
+                                    <div>
+                                        {
+                                            show && <h2 className='text-sm text-primary text-center'>{user.displayName}</h2>
+                                        }
+                                    </div>
+                                    <img src={user.photoURL} alt={user.displayName} className={`h-10 ml-1 w-10 rounded-full cursor-pointer`} />
+                                </div>
                                 <Link onClick={handleLogOut} to={`/`} className="btn border-none bg-base-100 text-secondary py-2 hover:btn-primary hover:bg-primary hover:text-white"><TbLogin2 /> Log Out</Link>
-                                
+
                             </div>
                             :
                             <div className="navbar-end flex gap-4">

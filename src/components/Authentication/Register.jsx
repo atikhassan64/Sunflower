@@ -4,7 +4,7 @@ import { AuthContext } from '../../contexts/AuthContext';
 import { toast } from 'react-toastify';
 
 const Register = () => {
-    const { createUser, setUser, user, loginWithGoogle } = use(AuthContext);
+    const { createUser, setUser, user, loginWithGoogle, updateUser } = use(AuthContext);
 
     const [error, setError] = useState("");
 
@@ -47,8 +47,15 @@ const Register = () => {
         createUser(email, password)
             .then((result) => {
                 // console.log(result.user)
-                const user = result.user
-                setUser(user)
+                const user = result.user;
+                updateUser({ displayName: name, photoURL: photo })
+                    .then(() => {
+                        setUser({ ...user, displayName: name, photoURL: photo });
+                    })
+                    .catch((error) => {
+                        toast.error(error.message);
+                        setUser(user);
+                    })
                 navigate(location.state || '/')
             })
             .catch((error) => {
@@ -62,7 +69,7 @@ const Register = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
-                navigate(location.state || '/')
+                navigate(location.state || '/');
             })
             .catch((error) => {
                 toast.error(error.message);
