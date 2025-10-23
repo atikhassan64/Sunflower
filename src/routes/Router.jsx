@@ -6,6 +6,7 @@ import Login from "../components/Authentication/Login";
 import Register from "../components/Authentication/Register";
 import Profile from "../pages/Profile";
 import PrivetRoute from "./PrivetRoute";
+import ForgetPassword from "../components/ForgetPassword";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login />
+            },
+            {
+                path: '/forget_password',
+                element: <ForgetPassword />
             },
             {
                 path: "/register",

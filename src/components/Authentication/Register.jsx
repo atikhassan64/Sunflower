@@ -2,11 +2,13 @@ import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../contexts/AuthContext';
 import { toast } from 'react-toastify';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Register = () => {
     const { createUser, setUser, user, loginWithGoogle, updateUser } = use(AuthContext);
 
     const [error, setError] = useState("");
+     const [toggle, setToggle] = useState(false);
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -77,7 +79,7 @@ const Register = () => {
     }
 
     return (
-        <div className='flex justify-center items-center min-h-screen'>
+        <div className='flex justify-center items-center mt-10 min-h-screen'>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <h2 className='pt-6 text-center font-semibold text-2xl text-primary '>Login your account</h2>
                 <form onSubmit={handleRegister} className="card-body">
@@ -107,12 +109,24 @@ const Register = () => {
                             placeholder="Email" />
                         {/* Password */}
                         <label className="label">Password</label>
-                        <input
-                            type="password"
-                            name='password'
-                            className="input outline-0 "
-                            required
-                            placeholder="Password" />
+                        <div className='flex items-center relative'>
+                            <input
+                                type={toggle ? "text" : "password"}
+                                name='password'
+                                className="input outline-0 "
+                                placeholder="Password"
+                                required
+                            />
+                            <div onClick={() => setToggle(!toggle)} className='absolute text-primary ml-70'>
+                                {
+                                    toggle ?
+                                        <FaEyeSlash className='' size={24}></FaEyeSlash>
+                                        :
+                                        <FaEye className=' ' size={24}></FaEye>
+
+                                }
+                            </div>
+                        </div>
                         {/* Signup btn */}
                         <button type='submit' className="btn mt-4 btn-primary">Signup</button>
                     </fieldset>

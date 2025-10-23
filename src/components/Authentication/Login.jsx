@@ -1,12 +1,17 @@
-import React, { use } from 'react';
+import React, { use, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../contexts/AuthContext';
 import { toast } from 'react-toastify';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
     const { signUser, setUser, loginWithGoogle } = use(AuthContext);
+    const emailRef = useRef();
     const location = useLocation();
     const navigate = useNavigate();
+    const [toggle, setToggle] = useState(false);
+    // const [email, setEmail] = useState("");
+    // console.log(email)
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -26,7 +31,7 @@ const Login = () => {
             .catch((error) => {
                 toast.error(error.message)
             })
-    }
+    };
 
     const handleGoogleSignin = () => {
         loginWithGoogle()
@@ -38,7 +43,12 @@ const Login = () => {
             .catch((error) => {
                 toast.error(error.message);
             })
-    }
+    };
+
+    const handleForgetPage = () => {
+        const email = emailRef.current.value;
+        navigate('/forget_password', { state: { email: email } });
+    };
 
     return (
         <div className='flex justify-center items-center min-h-screen'>
@@ -53,19 +63,32 @@ const Login = () => {
                             name='email'
                             className="input outline-0 "
                             placeholder="Email"
+                            ref={emailRef}
                             required
                         />
                         {/* Password */}
                         <label className="label">Password</label>
-                        <input
-                            type="password"
-                            name='password'
-                            className="input outline-0 "
-                            placeholder="Password"
-                            required
-                        />
+                        <div className='flex items-center relative'>
+                            <input
+                                type={toggle ? "text" : "password"}
+                                name='password'
+                                className="input outline-0 "
+                                placeholder="Password"
+                                required
+                            />
+                            <div onClick={() => setToggle(!toggle)} className='absolute text-primary ml-70'>
+                                {
+                                    toggle ?
+                                        <FaEyeSlash className='' size={24}></FaEyeSlash>
+                                        :
+                                        <FaEye className=' ' size={24}></FaEye>
+
+                                }
+                            </div>
+                        </div>
+
                         {/* Forget btn */}
-                        <div><a className="link link-hover">Forgot password?</a></div>
+                        <div><button onClick={handleForgetPage} className="link link-hover">Forgot password?</button></div>
                         {/* Login btn */}
                         <button type='submit' className="btn btn-primary mt-4">Login</button>
                     </fieldset>
