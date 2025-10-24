@@ -25,7 +25,7 @@ const NavBar = () => {
         <li><NavLink className={`md:font-medium md:text-lg text-accent`} to={`/profile`}>My Profile</NavLink></li>
     </div>
     return (
-        <div className="max-w-11/12 mx-auto">
+        <div className="max-w-11/12 mx-auto animate__animated animate__slideInRight">
             <div className="navbar py-1 px-0">
                 <div className="navbar-start">
                     <div className="dropdown">

@@ -12,6 +12,8 @@ const ForgetPassword = () => {
 
     const handleForgetPassword = (e) => {
         e.preventDefault();
+        
+        setMessage("")
 
         if (!email) {
             setMessage("Please enter your email address");
@@ -21,6 +23,7 @@ const ForgetPassword = () => {
         forgetPassword(email)
             .then(() => {
                 toast.success("Please check your email for Forget Password");
+                e.target.reset();
             })
             .catch((error) => {
                 if (error.code === "auth/user-not-found") {
@@ -47,7 +50,7 @@ const ForgetPassword = () => {
                             <label className="label">Email</label>
                             <input
                                 type="email"
-
+                                name='email'
                                 className="input outline-0 "
                                 placeholder="Email"
                                 value={email}
@@ -57,7 +60,7 @@ const ForgetPassword = () => {
                             {/* Signup btn */}
                             <button type='submit' className="btn mt-4 btn-primary">Recover</button>
                         </fieldset>
-                        <p className='text-accent'><small>{message}</small></p>
+                        <p className='text-red-500'><small>{message}</small></p>
                     </form>
                 </div>
             </div>

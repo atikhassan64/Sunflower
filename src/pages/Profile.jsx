@@ -9,6 +9,7 @@ const Profile = () => {
 
     const handleUpdate = (e) => {
         setUpdateInfo(e);
+
     };
 
     const handleUpdateInfo = (e) => {
@@ -19,6 +20,7 @@ const Profile = () => {
         updateUser({ displayName: name, photoURL: photo })
             .then(() => {
                 setUser({ ...user, displayName: name, photoURL: photo });
+                e.target.reset();
             })
             .catch((error) => {
                 toast.error(error.message);

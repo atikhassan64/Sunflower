@@ -8,7 +8,9 @@ import UpcomingWorkShop from '../components/ExtraSection/UpcomingWorkShop';
 const HomePage = () => {
     return (
         <div>
-            <HeroSlider />
+            <section className='animate__animated animate__slideInLeft'>
+                <HeroSlider />
+            </section>
             <Suspense fallback={<span className="loading loading-spinner text-error"></span>}>
                 <SkillCards></SkillCards>
             </Suspense>
@@ -18,6 +20,9 @@ const HomePage = () => {
             <section>
                 <HowItWorks></HowItWorks>
             </section>
+
+            
+
             <section>
                 <UpcomingWorkShop />
             </section>

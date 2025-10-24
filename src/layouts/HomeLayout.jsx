@@ -27,7 +27,7 @@ const HomeLayout = () => {
                 toastOptions={{
                     // Define default options
                     className: '',
-                    duration: 5000,
+                    duration: 2000,
                     removeDelay: 1000,
                     style: {
                         background: '#363636',
