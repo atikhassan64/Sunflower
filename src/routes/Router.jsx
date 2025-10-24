@@ -7,6 +7,7 @@ import Register from "../components/Authentication/Register";
 import Profile from "../pages/Profile";
 import PrivetRoute from "./PrivetRoute";
 import ForgetPassword from "../components/ForgetPassword";
+import ErrorPage from "../pages/ErrorPage";
 
 export const router = createBrowserRouter([
     {
@@ -41,5 +42,9 @@ export const router = createBrowserRouter([
                 element: <PrivetRoute><Profile></Profile></PrivetRoute>
             }
         ]
+    },
+    {
+        path: "/*",
+        element: <ErrorPage />
     }
 ])

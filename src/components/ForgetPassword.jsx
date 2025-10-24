@@ -19,7 +19,7 @@ const ForgetPassword = () => {
             setMessage("Please enter your email address");
             return
         }
-        
+
         forgetPassword(email)
             .then(() => {
                 toast.success("Please check your email for Forget Password");
@@ -40,7 +40,7 @@ const ForgetPassword = () => {
 
     return (
         <div>
-            <div className='flex justify-center items-center mt-20'>
+            <div className='flex justify-center items-center mt-15 max-w-11/12 mx-auto'>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <h2 className='pt-6 text-center font-semibold text-2xl text-primary '>Recover Your Password</h2>
                     <form onSubmit={handleForgetPassword} className="card-body">

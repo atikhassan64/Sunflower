@@ -14,11 +14,11 @@ const SkillDetailsPage = () => {
         setDetails(skillDetails);
     }, [data, convertedId])
     return (
-        <div className='max-w-11/12 mx-auto grid grid-cols-12 gap-10 py-10'>
-            <section className='col-span-8'>
+        <div className='max-w-11/12 mx-auto grid md:grid-cols-12 gap-10 py-10'>
+            <section className='col-span-7 lg:col-span-8'>
                 <SkillDetail details={details} />
             </section>
-            <aside className='col-span-4'>
+            <aside className='col-span-7 mx-auto md:mx-0 md:col-span-5 lg:col-span-4 '>
                 <SkillDetailForm />
             </aside>
         </div>

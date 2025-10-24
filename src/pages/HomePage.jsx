@@ -15,14 +15,6 @@ const HomePage = () => {
             <Suspense fallback={<span className="loading loading-spinner text-error"></span>}>
                 <SkillCards></SkillCards>
             </Suspense>
-            {/* <div>
-                {
-                    skills.map((skillCard) => <SkillCards
-                        key={skillCard.skillId}
-                        heroDesign={skillCard}
-                    ></SkillCards>)
-                }
-            </div> */}
         </div>
     );
 };

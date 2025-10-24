@@ -11,10 +11,10 @@ const SkillDetailForm = () => {
     }
 
     return (
-        <div>
+        <div className=''>
             <h1 className='font-bold text-primary mb-5 text-2xl'>Book Session</h1>
 
-            <div className="card bg-base-200 w-full  shrink-0 shadow-2xl">
+            <div className="card bg-base-200 w-full  shrink-0 shadow-2xl ">
                 <form onSubmit={handleDetails} className="card-body">
                     <fieldset className="fieldset">
                         <label className="label font-medium text-lg">Name</label>
