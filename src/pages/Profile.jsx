@@ -31,7 +31,7 @@ const Profile = () => {
     }
 
     return (
-        <div className='max-w-11/12 mx-auto mt-15 mb-10 '>
+        <div className='max-w-11/12 mx-auto mt-15 mb-10 animate__animated animate__slideInRight '>
             <div className='shadow-lg rounded-lg px-5 md:px-10 py-10 md:py-16'>
                 <div className='flex justify-between items-center'>
                     <div className='flex items-center'>

@@ -7,7 +7,6 @@ const SkillDetailsPage = () => {
     const data = useLoaderData();
     const { id } = useParams();
     const convertedId = parseInt(id);
-    // console.log(data, convertedId)
     const [details, setDetails] = useState({});
     useEffect(() => {
         const skillDetails = data.find(d => d.skillId === convertedId);
