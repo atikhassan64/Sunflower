@@ -36,7 +36,7 @@ const events = [
 
   const handleJoin = ()=>{
     toast.success('Join is success');
-  }
+  };
 
 const UpcomingWorkShop = () => {
     return (

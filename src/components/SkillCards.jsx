@@ -4,7 +4,6 @@ const skillPromise = fetch("/sunflower_data.json").then((res)=> res.json());
 
 const SkillCards = () => {
     const skills = use(skillPromise);
-    // console.log(skills)
     
     return (
         <div className='max-w-11/12 mx-auto mt-15'>

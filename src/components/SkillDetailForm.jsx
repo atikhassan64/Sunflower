@@ -1,5 +1,5 @@
 import React from 'react';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 const SkillDetailForm = () => {
 
@@ -7,7 +7,7 @@ const SkillDetailForm = () => {
     const handleDetails = (event) => {
         event.preventDefault();
         event.target.reset();
-        toast("success");
+        toast.success("success");
     }
 
     return (

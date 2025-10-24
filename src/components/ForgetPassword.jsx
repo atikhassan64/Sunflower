@@ -1,16 +1,14 @@
 import React, { use, useState } from 'react';
 import { useLocation } from 'react-router';
-import { toast } from 'react-toastify';
 import { AuthContext } from '../contexts/AuthContext';
+import toast from 'react-hot-toast';
 
 const ForgetPassword = () => {
     const { forgetPassword } = use(AuthContext);
     const location = useLocation();
-    console.log(location.state)
     const transferEmail = location.state?.email || '';
     const [email, setEmail] = useState(transferEmail);
     const [message, setMessage] = useState("");
-    console.log(email)
 
     const handleForgetPassword = (e) => {
         e.preventDefault();

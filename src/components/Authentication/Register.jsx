@@ -1,8 +1,8 @@
 import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../contexts/AuthContext';
-import { toast } from 'react-toastify';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import toast from 'react-hot-toast';
 
 const Register = () => {
     const { createUser, setUser, user, loginWithGoogle, updateUser } = use(AuthContext);
@@ -23,7 +23,6 @@ const Register = () => {
 
         setError("")
 
-        // const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
         const lengthPattern = /^.{6,}$/;
         const uppercasePattern = /[A-Z]/;
         const lowercasePattern = /[a-z]/;
@@ -45,10 +44,8 @@ const Register = () => {
                 !user && toast.success("Registration successful!")
             }
         }
-        // console.log({ name, photo, email, password })
         createUser(email, password)
             .then((result) => {
-                // console.log(result.user)
                 const user = result.user;
                 updateUser({ displayName: name, photoURL: photo })
                     .then(() => {

@@ -1,8 +1,8 @@
 import React, { use, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../contexts/AuthContext';
-import { toast } from 'react-toastify';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import toast from 'react-hot-toast';
 
 const Login = () => {
     const { signUser, setUser, loginWithGoogle } = use(AuthContext);
@@ -10,8 +10,6 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const [toggle, setToggle] = useState(false);
-    // const [email, setEmail] = useState("");
-    // console.log(email)
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -20,7 +18,6 @@ const Login = () => {
         const password = form.password.value;
         signUser(email, password)
             .then((result) => {
-                console.log(result.user)
                 const user = result.user;
                 setUser(user);
                 e.target.reset();
