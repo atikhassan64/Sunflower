@@ -5,8 +5,6 @@ import { Navigate, useLocation } from 'react-router';
 const PrivetRoute = ({ children }) => {
     const { user, loading } = use(AuthContext);
     const location = useLocation();
-    // console.log(location)
-
     if(loading){
         return <span className="loading loading-spinner text-error"></span>
     }

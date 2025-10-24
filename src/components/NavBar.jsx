@@ -3,22 +3,21 @@ import { TbLogin2 } from 'react-icons/tb';
 import { Link, NavLink } from 'react-router';
 import logo from '../assets/Sunflower-01.png'
 import { AuthContext } from '../contexts/AuthContext';
-import { toast } from 'react-toastify';
 import { LuLogOut } from 'react-icons/lu';
+import toast from 'react-hot-toast';
 
 const NavBar = () => {
 
     const { user, logOutUser } = use(AuthContext);
     const [show, setShow] = useState(false)
-    // console.log(user)
 
     const handleLogOut = () => {
         logOutUser()
             .then(() => {
-                toast.success('SignOut success')
+                toast.success('SignOut success');
             })
             .catch((error) => {
-                toast.error(error.message)
+                toast.error(error.message);
             })
     }
     const links = <div className='navbarColor flex lg:flex-row flex-col'>
