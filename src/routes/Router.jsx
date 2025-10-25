@@ -8,6 +8,7 @@ import Profile from "../pages/Profile";
 import PrivetRoute from "./PrivetRoute";
 import ForgetPassword from "../components/ForgetPassword";
 import ErrorPage from "../pages/ErrorPage";
+import Loading from "../pages/Loading";
 
 export const router = createBrowserRouter([
     {
@@ -23,7 +24,8 @@ export const router = createBrowserRouter([
                 element: <PrivetRoute>
                     <SkillDetailsPage />
                 </PrivetRoute>,
-                loader: () => fetch("/sunflower_data.json")
+                loader: () => fetch("/sunflower_data.json"),
+                hydrateFallbackElement: <Loading></Loading>
             },
             {
                 path: "/login",

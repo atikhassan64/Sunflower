@@ -7,10 +7,10 @@ const HowItWorks = () => {
     return (
         <div>
             <div className="max-w-11/12 mx-auto mt-15 mb-10">
-                <h2 className="text-4xl font-bold text-center text-primary mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-3 md:mb-4">
                     How It Works
                 </h2>
-                <p className="text-center text-accent mb-10 text-lg">
+                <p className="text-center text-accent mb-10 text-sm md:text-lg">
                     Start learning and sharing skills in just four simple steps.
                 </p>
 

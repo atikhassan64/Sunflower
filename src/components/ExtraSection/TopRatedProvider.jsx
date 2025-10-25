@@ -4,8 +4,8 @@ import { MdOutlineStarPurple500 } from 'react-icons/md';
 const TopRatedProvider = () => {
     return (
         <div className='max-w-11/12 mx-auto mt-15 py-10'>
-            <h2 className='mb-5 font-bold text-3xl text-primary text-center'>Top Rated Providers</h2>
-            <p className="text-center mb-10 text-accent text-lg">
+            <h2 className='mb-3 md:mb-5 font-bold text-2xl md:text-3xl text-primary text-center'>Top Rated Providers</h2>
+            <p className="text-center mb-10 text-accent text-sm md:text-lg">
                 Our Top Rated Providers stand out for their skills, ratings, and commitment to excellence. 
             </p>
             <section className='grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-3'>

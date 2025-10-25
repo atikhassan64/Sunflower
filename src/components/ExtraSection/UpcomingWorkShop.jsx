@@ -43,10 +43,10 @@ const UpcomingWorkShop = () => {
         <div>
             <section className="py-16 bg-base-100 max-w-11/12 mx-auto">
                 <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-4">
+                    <h2 className="text-2xl md:text-4xl font-semibold md:font-bold text-center text-primary mb-2 md:mb-4">
                         Upcoming Workshops & Events
                     </h2>
-                    <p className="text-center text-gray-600 mb-10">
+                    <p className="text-center text-accent text-sm md:text-lg mb-10">
                         Join our live sessions and learn directly from expert providers. Stay updated with the latest workshops designed to enhance your skills.
                     </p>
 
@@ -62,18 +62,18 @@ const UpcomingWorkShop = () => {
                                     className="w-full h-48 object-cover"
                                 />
                                 <div className="p-6 text-left ">
-                                    <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                                    <h3 className="text-xl font-semibold mb-2 text-primary ">
                                         {event.title}
                                     </h3>
-                                    <p className="text-sm text-gray-500 mb-2">{event.instructor}</p>
-                                    <div className="flex items-center text-gray-600 text-sm mb-1">
-                                        <LiaCalendarDaySolid className="w-4 h-4 mr-2" /> {event.date}
+                                    <p className="text-sm text-accent mb-2">{event.instructor}</p>
+                                    <div className="flex items-center text-accent text-sm mb-1">
+                                        <LiaCalendarDaySolid className="w-4 text-accent h-4 mr-2" /> {event.date}
                                     </div>
-                                    <div className="flex items-center text-gray-600 text-sm mb-1">
-                                        <CgLock className="w-4 h-4 mr-2" /> {event.time}
+                                    <div className="flex items-center text-accent text-sm mb-1">
+                                        <CgLock className="w-4 h-4 text-accent mr-2" /> {event.time}
                                     </div>
-                                    <div className="flex items-center text-gray-600 text-sm mb-4">
-                                        <BiMapPin className="w-4 h-4 mr-2" /> {event.location}
+                                    <div className="flex items-center text-accent text-sm mb-4">
+                                        <BiMapPin className="w-4 text-accent h-4 mr-2" /> {event.location}
                                     </div>
                                     <button onClick={handleJoin} className="bg-primary text-white px-5 py-2 rounded-full text-sm  cursor-pointer font-semibold hover:bg-primary/90 transition-all duration-300">
                                         Join Now

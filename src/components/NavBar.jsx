@@ -25,16 +25,16 @@ const NavBar = () => {
         <li><NavLink className={`md:font-medium md:text-lg text-accent`} to={`/profile`}>My Profile</NavLink></li>
     </div>
     return (
-        <div className="max-w-11/12 mx-auto animate__animated animate__slideInRight">
+        <div className="max-w-11/12 mx-auto ">
             <div className="navbar py-1 px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost px-1 bg-none lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost px-1 lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 md:p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 md:p-2 shadow">
                             {links}
                         </ul>
                     </div>
@@ -52,7 +52,7 @@ const NavBar = () => {
                                 <div onMouseEnter={() => setShow(true)}
                                     onMouseLeave={() => setShow(false)}
                                     className=' flex relative items-center justify-center '>
-                                    <div className='absolute z-40 '>
+                                    <div className='absolute z-50 '>
                                         {
                                             show && <h2 className='text-sm md:text-lg font-normal md:font-medium dropdown-content bg-base-100 rounded-box z-1 mt-25 w-35 md:w-50 p-2 shadow text-secondary '>{user.displayName}</h2>
                                         }

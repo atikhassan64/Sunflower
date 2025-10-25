@@ -22,7 +22,7 @@ const HeroSlider = () => {
                     style={{ backgroundImage: `url('https://licklibrary-com-ltd.imgix.net/images/welcome/lesson-home-hero-image.jpg?ixlib=php-3.3.1&s=055b9121fb3c8cb7a7f2b70ef8e6bf4f')` }}>
 
                     <div className=' flex justify-center items-center h-[400px] flex-col'>
-                        <h2 className=' text-secondary text-centerfont-semibold md:text-2xl lg:text-3xl '>Most Popular Skill</h2>
+                        <h2 className=' text-secondary text-center font-semibold md:text-2xl lg:text-3xl '>Most Popular Skill</h2>
                         <h2 className=' text-base-300 font-extrabold text-2xl md:text-4xl lg:text-6xl mt-2 text-center md:mt-3 '>Beginner Guitar Lessons</h2>
                     </div>
 
