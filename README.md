@@ -7,6 +7,12 @@ Whether it’s guitar lessons, language exchange, coding help, or yoga training 
 
 ---
 
+## 🚀 Live Demo
+
+[Live Demo](https://atik-assignment-nine.web.app/)
+
+---
+
 ## 🎯 Purpose of the Project
 
 The main goals of this project are:
@@ -14,12 +20,6 @@ The main goals of this project are:
 - To provide an easy-to-use interface for finding and booking skill sessions.
 - To implement secure authentication using Firebase.
 - To develop a modern and responsive Single Page Application (SPA) using React Router.
-
----
-
-## 🌐 Live Link
-
-🔗 **Hosted Live URL:** [https://atik-assignment-nine.web.app](https://atik-assignment-nine.web.app)
 
 ---
 
@@ -59,6 +59,52 @@ The main goals of this project are:
    - **Top Rated Providers**
    - **How It Works**
    - **Additional Custom Section (Relevant to the platform) = This section name is : Upcoming Workshops & Events**
+
+---
+
+## Installation & Setup
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+```
+
+---
+## 📂 Project Structure
+```plaintext
+│
+├── 📁 public/               # Publicly accessible static files (images, fonts, icons) 
+│
+├── 📁 src/                  # Main application source code 
+│   │
+│   ├── 📁 assets/           # Local images, icons, SVGs, and media 
+│   ├── 📁 auth/             # Authentication logic and hooks 
+│   ├── 📁 components/       # Reusable React components 
+│   ├── 📁 context/          # React Context providers for state management
+│   ├── 📁 layouts/          # Layouts and structural templates for pages 
+│   ├── 📁 pages/            # Next.js page routes / main views 
+│   ├── 📁 routes/           # Application routing configuration 
+│   ├── 📁 utils/            # Utility functions and helpers 
+│   │
+│   ├── App.jsx              # Main React application component 
+│   └── main.jsx             # Entry point of the React application
+│
+└── 📦 package.json          # Project dependencies and scripts
+
+```
+
+---
+
+## 🛠️ Deployment
+
+1. **Environment Setup**: Ensure all `.env` variables are properly configured.
+2. **Production Build**:
+   ```bash
+   npm run build
+   npm start
+   ```
+3. **Hosting**: Deploy on platforms like Vercel, Netlify, or AWS.
 
 ---
 
